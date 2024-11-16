@@ -1,0 +1,613 @@
+body{
+    background: black;
+    font-family: "Rethink Sans", serif;
+}
+
+.hello-world{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    font-size: 35px;
+    color: white;
+    display: flex;
+    animation: shadow 1s ease-in-out 19s forwards;
+}
+@keyframes shadow {
+    0%{
+        text-shadow:  0 0 0 white;
+    }
+
+    100%{
+        text-shadow: 0px 0px 10px white,
+        0px 0px 20px white,
+        0px 0px 40px white,
+        0px 0px 80px white;
+    }
+}
+.hello-world span:not(:last-child){
+margin: 0 5px;
+}
+.hello-world .letter-h::before{
+    content: " ";
+    animation: letter-1 1s ease-in forwards;
+}
+
+@keyframes letter-1 {
+    5%{
+        content: "24";
+        color: blueviolet;
+    }
+    20%{
+        content: "b";
+        color: rgb(107, 226, 43);
+    }
+    40%{
+        content: "l";
+        color: rgb(43, 89, 226);
+    }
+    60%{
+        content: "s";
+        color: rgb(218, 255, 31);
+    }
+    70%{
+        content: "w";
+        color: rgb(226, 43, 165);
+    }
+    80%{
+        content: "0";
+        color: rgb(43, 141, 226);
+    }
+    100%{
+        content: "h";
+        color: #fff;
+    }
+}
+.hello-world .letter-e::before{
+    content: " ";
+    animation: letter-2 1s ease-in 1s forwards;
+}
+@keyframes letter-2 {
+    5%{
+        content: "n";
+        color: aqua;
+    }
+    25%{
+        content: "d";
+        color: forestgreen;
+    }
+
+    50%{
+        content: "s";
+        color: darkslategray;
+    }
+
+    75%{
+        content: "p";
+        color: mediumvioletred;
+    }
+
+    100%{
+        content: "e";
+        color: #fff;
+    }
+
+}
+.hello-world .letter-l::before{
+    content: " ";
+    animation: d-l 2s ease-in 2s forwards;
+}
+
+@keyframes d-l {
+    5%{
+        content: "j";
+        color: blue;
+    }
+    10%{
+        content: "a";
+        color: greenyellow;
+    }
+    15%{
+        content: "M";
+        color: red;
+    }
+    20%{
+        content: "q";
+        color: #ababab;
+    }
+    25%{
+        content: "w";
+        color: #ae00ff;
+    }
+    35%{
+        content: "2";
+        color: #9d44c6;
+    }
+    45%{
+        content: "b";
+        color: #3c6f91;
+    }
+    55%{
+        content: "j";
+        color: #994747;
+    }
+    65%{
+        content: "d";
+        color: #4efa6e;
+    }
+    75%{
+        content: "g";
+        color: #c2d41b;
+    }
+    90%{
+        content: "p";
+        color: #1c2c49;
+    }
+    100%{
+        content: "l";
+        color: #ffffff;
+    }
+}
+
+.hello-world .letter-ll::before{
+    content: " ";
+    animation: d-ll 2s ease-in 4s forwards;
+}
+
+@keyframes d-ll {
+    5%{
+        content: "a";
+        color: rgb(132, 132, 210);
+    }
+    10%{
+        content: "b";
+        color: rgb(50, 77, 10);
+    }
+    15%{
+        content: "i";
+        color: rgb(79, 67, 156);
+    }
+    20%{
+        content: "z";
+        color: #04ff00;
+    }
+    25%{
+        content: "e";
+        color: #ae00ff;
+    }
+    35%{
+        content: "7";
+        color: #9d44c6;
+    }
+    45%{
+        content: "g";
+        color: #3c6f91;
+    }
+    55%{
+        content: "t";
+        color: #2b2d7f;
+    }
+    65%{
+        content: "b";
+        color: #4efa6e;
+    }
+    75%{
+        content: "k";
+        color: #c2d41b;
+    }
+    90%{
+        content: "v";
+        color: #fcff96;
+    }
+    100%{
+        content: "l";
+        color: #ffffff;
+    }
+}
+
+.hello-world .letter-o::before{
+    content: " ";
+    animation: letter-o 2.3s ease-in 6s forwards;
+}
+
+@keyframes letter-o {
+    5%{
+        content: "x";
+        color: rgb(132, 132, 210);
+    }
+    9%{
+        content: "s";
+        color: rgb(50, 77, 10);
+    }
+    13%{
+        content: "c";
+        color: rgb(79, 67, 156);
+    }
+    19%{
+        content: "d";
+        color: #04ff00;
+    }
+    25%{
+        content: "b";
+        color: #ae00ff;
+    }
+    30%{
+        content: "f";
+        color: #9d44c6;
+    }
+    40%{
+        content: "g";
+        color: #3c6f91;
+    }
+    50%{
+        content: "y";
+        color: #2b2d7f;
+    }
+    60%{
+        content: "i";
+        color: #4efa6e;
+    }
+    70%{
+        content: "z";
+        color: #c2d41b;
+    }
+    80%{
+        content: "v";
+        color: #fcff96;
+    }
+    85%{
+        content: "l";
+        color: #cb3fcd;
+    }
+    90%{
+        content: "m";
+        color: #6ea920;
+    }
+    95%{
+        content: "p";
+        color: #cd3f46;
+    }
+    100%{
+        content: "o";
+        color: #fff;
+    }
+
+
+}
+.hello-world .letter-space::before{
+    content: " ";
+    margin: 0 10px;
+}
+.hello-world .letter-w::before{
+    content: " ";
+    animation: letter-w 2.5s ease-in 8.5s forwards;
+}
+
+@keyframes letter-w {
+    4%{
+        content: "a";
+        color: rgb(17, 84, 73);
+    }
+    8%{
+        content: "t";
+        color: rgb(50, 77, 10);
+    }
+    12%{
+        content: "m";
+        color: rgb(255, 247, 0);
+    }
+    17%{
+        content: "f";
+        color: #04ff00;
+    }
+    20%{
+        content: "z";
+        color: #ae00ff;
+    }
+    24%{
+        content: "y";
+        color: #9d44c6;
+    }
+    30%{
+        content: "g";
+        color: #3c6f91;
+    }
+    45%{
+        content: "r";
+        color: #2b2d7f;
+    }
+    55%{
+        content: "i";
+        color: #4efa6e;
+    }
+    65%{
+        content: "p";
+        color: #c2d41b;
+    }
+    70%{
+        content: "k";
+        color: #fcff96;
+    }
+    75%{
+        content: "l";
+        color: #cb3fcd;
+    }
+    80%{
+        content: "m";
+        color: #6ea920;
+    }
+    83%{
+        content: "n";
+        color: #cd3f46;
+    }
+    89%{
+        content: "u";
+        color: #12d4de;
+    }
+    
+    93%{
+        content: "Q";
+        color: #12d4de;
+    }
+    87%{
+        content: "a";
+        color: #12d4de;
+    }
+    100%{
+        content: "w";
+        color: #ffffff;
+    }
+
+
+}
+.hello-world .letter-oo::before{
+    content: " ";
+    animation: letter-oo 2.3s ease-in 11s forwards;
+}
+
+@keyframes letter-oo {
+    5%{
+        content: "x";
+        color: rgb(132, 132, 210);
+    }
+    9%{
+        content: "s";
+        color: #ffffff;
+    }
+    13%{
+        content: "c";
+        color: rgb(79, 67, 156);
+    }
+    19%{
+        content: "d";
+        color: #04ff00;
+    }
+    25%{
+        content: "b";
+        color: #ae00ff;
+    }
+    30%{
+        content: "f";
+        color: #9d44c6;
+    }
+    40%{
+        content: "g";
+        color: #3c6f91;
+    }
+    50%{
+        content: "y";
+        color: #2b2d7f;
+    }
+    60%{
+        content: "i";
+        color: #4efa6e;
+    }
+    70%{
+        content: "z";
+        color: #c2d41b;
+    }
+    80%{
+        content: "v";
+        color: #fcff96;
+    }
+    85%{
+        content: "l";
+        color: #cb3fcd;
+    }
+    90%{
+        content: "m";
+        color: #6ea920;
+    }
+    95%{
+        content: "p";
+        color: #cd3f46;
+    }
+    100%{
+        content: "o";
+        color: #fff;
+    }
+}
+
+
+.hello-world .letter-r::before{
+    content: " ";
+    animation: letter-r 2.5s ease-in 13.3s forwards;
+}
+
+@keyframes letter-r {
+    5%{
+        content: "g";
+        color: rgb(255, 5, 5);
+    }
+    9%{
+        content: "h";
+        color: #ffffff;
+    }
+    13%{
+        content: "s";
+        color: rgb(34, 0, 255);
+    }
+    19%{
+        content: "d";
+        color: #04ff00;
+    }
+    25%{
+        content: "b";
+        color: #54ff52;
+    }
+    30%{
+        content: "f";
+        color: #8a669a;
+    }
+    40%{
+        content: "g";
+        color: #3c6f91;
+    }
+    45%{
+        content: "y";
+        color: #2b2d7f;
+    }
+    50%{
+        content: "i";
+        color: #4efa6e;
+    }
+    60%{
+        content: "z";
+        color: #c2d41b;
+    }
+    70%{
+        content: "v";
+        color: #fcff96;
+    }
+    80%{
+        content: "l";
+        color: #cb3fcd;
+    }
+    85%{
+        content: "m";
+        color: #6ea920;
+    }
+    90%{
+        content: "p";
+        color: #cd3f46;
+    }
+    93%{
+        content: "o";
+        color: #4ba4e9;
+    }
+    95%{
+        content: "j";
+        color: #4ba4e9;
+    }
+    98%{
+        content: "a";
+        color: #4ba4e9;
+    }
+    100%{
+        content: "r";
+        color: #ffffff;
+    }
+}
+.hello-world .letter-lll::before{
+    content: " ";
+    animation: letter-lll 2s ease-in 15.8s forwards;
+}
+
+@keyframes letter-lll {
+    5%{
+        content: "mohmed gamal😂";
+        color: rgb(132, 132, 210);
+    }
+    15%{
+        content: "css";
+        color: rgb(50, 77, 10);
+    }
+    20%{
+        content: "html";
+        color: rgb(79, 67, 156);
+    }
+    30%{
+        content: "java-script";
+        color: #04ff00;
+    }
+    35%{
+        content: "e";
+        color: #ae00ff;
+    }
+    45%{
+        content: "7";
+        color: #9d44c6;
+    }
+    50%{
+        content: "c++";
+        color: #3c6f91;
+    }
+    55%{
+        content: "world";
+        color: #2b2d7f;
+    }
+    65%{
+        content: "hello";
+        color: #4efa6e;
+    }
+    75%{
+        content: "404";
+        color: #c2d41b;
+    }
+    90%{
+        content: "9";
+        color: #fcff96;
+    }
+    100%{
+        content: "l";
+        color: #ffffff;
+    }
+}
+.hello-world .letter-d::before{
+    content: " ";
+    animation: letter-d 1s ease-in 17.8s forwards;
+}
+
+@keyframes letter-d {
+    5%{
+        content: "n";
+        color: aqua;
+    }
+    25%{
+        content: "d";
+        color: forestgreen;
+    }
+
+    50%{
+        content: "S";
+        color: darkslategray;
+    }
+
+    75%{
+        content: "p";
+        color: mediumvioletred;
+    }
+
+    100%{
+        content: "d";
+        color: #fff;
+    }
+}
+
+.hello-world .letter-end::before{
+    content: " ";
+    animation: letter-end 0.3s ease-in 18.8s forwards;
+}
+
+@keyframes letter-end {
+
+    0%{
+        content: "p";
+        color: mediumvioletred;
+    }
+
+    100%{
+        content: "!";
+        color: #00dcf0;
+    }
+}
